@@ -1,8 +1,8 @@
 # Coroutine MDC Request Logging Demo
 
-Spring WebFlux의 coRouter와 Kotlin Coroutine을 사용하는 비동기 환경에서 MDC(Mapped Diagnostic Context)를 활용할 수 있도록 구현한 데모 프로젝트입니다.
+Spring WebFlux의 coRouter를 사용하는 비동기 환경에서 MDC(Mapped Diagnostic Context)를 활용할 수 있도록 구현한 데모 프로젝트입니다.
 
-코틀린 진영에서는 MDCContext 라는 도구를 지원하기 때문에 편리하게 구현 가능합니다.
+코틀린 진영에서 제공하는 MDCContext를 사용해 편리하게 구현 가능합니다.
 
 - 추가 정보
   - WebFlux 환경에서는 더 복잡한 처리가 필요합니다. - [Context Propagation with Project Reactor 3 - Unified Bridging between Reactive and Imperative (Spring Blog)](https://spring.io/blog/2023/03/30/context-propagation-with-project-reactor-3-unified-bridging-between-reactive)
