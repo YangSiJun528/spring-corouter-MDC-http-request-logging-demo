@@ -8,6 +8,12 @@ Spring WebFlux의 coRouter를 사용하는 비동기 환경에서 MDC(Mapped Dia
   - WebFlux 환경에서는 더 복잡한 처리가 필요합니다. - [Context Propagation with Project Reactor 3 - Unified Bridging between Reactive and Imperative (Spring Blog)](https://spring.io/blog/2023/03/30/context-propagation-with-project-reactor-3-unified-bridging-between-reactive)
   - `@Async` 같이 다른 스레드에 작업을 위임하는 경우에도 별도의 처리가 필요합니다. - [slf4j MDC(Mapped Diagnostics Context)를 사용하여 로그에 맥락 더하기 (hudi.blog)](https://hudi.blog/slf4j-mapped-diagnotics-context/#%EC%BD%94%EB%A3%A8%ED%8B%B4)
 
+- 참고 자료
+  - [slf4j MDC(Mapped Diagnostics Context)를 사용하여 로그에 맥락 더하기 (hudi.blog)](https://hudi.blog/slf4j-mapped-diagnotics-context/#%EC%BD%94%EB%A3%A8%ED%8B%B4)
+  - [Spring WebFlux 에서 coRouter filter를 이용하여 request, response 로깅하기](https://medium.com/riiid-teamblog-kr/spring-webflux-%EC%97%90%EC%84%9C-corouter-filter%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-request-response-%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0-df56f9d9680)
+
+TODO: Spring Boot 3.4에 추가 된 Structured Logging 기능 사용해보기
+
 ## 프로젝트 소개
 
 이 프로젝트는 다음과 같은 주요 기능을 제공합니다:
@@ -56,6 +62,8 @@ class MDCRequestLoggingFilter : CoWebFilter() {
 - MDC 컨텍스트가 전파되어 동일한 requestId로 로깅
 
 ## 테스트 방법
+
+프로젝트 빌드 및 실행 이후 테스트 수행
 
 ### API 호출 테스트
 ```bash
