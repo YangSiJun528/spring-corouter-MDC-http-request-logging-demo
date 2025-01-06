@@ -11,8 +11,9 @@ Spring WebFlux의 coRouter를 사용하는 비동기 환경에서 MDC(Mapped Dia
 - 참고 자료
   - [slf4j MDC(Mapped Diagnostics Context)를 사용하여 로그에 맥락 더하기 (hudi.blog)](https://hudi.blog/slf4j-mapped-diagnotics-context/#%EC%BD%94%EB%A3%A8%ED%8B%B4)
   - [Spring WebFlux 에서 coRouter filter를 이용하여 request, response 로깅하기](https://medium.com/riiid-teamblog-kr/spring-webflux-%EC%97%90%EC%84%9C-corouter-filter%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-request-response-%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0-df56f9d9680)
-
-TODO: Spring Boot 3.4에 추가 된 Structured Logging 기능 사용해보기
+  - org.springframework.web.server
+    - [java](https://github.com/spring-projects/spring-framework/tree/6.2.x/spring-web/src/main/java/org/springframework/web/server)
+    - [kotlin](https://github.com/spring-projects/spring-framework/tree/6.2.x/spring-web/src/main/kotlin/org/springframework/web/server)
 
 ## 프로젝트 소개
 
